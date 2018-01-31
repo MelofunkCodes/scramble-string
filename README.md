@@ -2,7 +2,7 @@
 
 ## Demo
 
-[insert demo here once deployed]
+http://scramble-string.herokuapp.com/
 
 ## Intro
 What started off as me wanting to write a script to scramble my friend's dancer name for his
