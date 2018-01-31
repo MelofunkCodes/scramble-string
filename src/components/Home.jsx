@@ -24,7 +24,7 @@ class Home extends Component {
     return (
       <div className="home-page">
         <header>
-          Scrambled!
+          <h1>Scrambled!</h1>
           <button onClick={this.handleClick}>
             {(show) ? 'Home' : 'Scramble my own words!'}
           </button>

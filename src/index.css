@@ -1,5 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Kaushan+Script');
+
 body {
   margin: 0;
-  padding: 0;
+  min-width: 400px;
+  padding: 1em;
   font-family: sans-serif;
+}
+
+h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 5rem;
+  color: #3a3a3a;
+  padding-top: 10%;
+  padding-bottom: 5%;
+  margin: 0;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  color: #3a3a3a;
+  margin: 0;
+}
+
+input[type=text]  {
+  width: 80%;
+  text-align: left;
+  background-color: #FFF8E1;
+  padding: 3% 5%;
+  border: none;
+  font-size: 1.5em;
+  border-bottom: solid 2px #f7f7f7;
+  transition: border 0.3s;
+  border-radius: 5px;
+  outline-color: white;
+  margin: 1em 0;
+}
+
+button {
+  background-color: #FF8F00;
+  font-family: 'Josefin Sans', sans-serif;
+  border: none;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-left: 20px;
+  width: 30%
+}
+
+button:hover {
+  transition: background-color 1s ease;
+  background-color: #FFC107;
+}
+
+.bday-scramble {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.bday-text {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 4em;
+  color: #3a3a3a;
+  padding-left: 1em;
+  padding-bottom: 1em;
+}
+
+.input-scramble {
+  padding-top: 1em;
+}
+
+.input-results {
+  padding: 1em;
 }

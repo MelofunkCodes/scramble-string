@@ -26,11 +26,11 @@ class InputScramble extends Component {
     const { userInput, scrambledString } = this.state;
 
     return (
-      <div>
+      <div className="input-results">
         <p>Original Text:</p>
-        {userInput}
+        <div className="bday-text">{userInput}</div>
         <p>Scrambled Text:</p>
-        {scrambledString}
+        <div className="bday-text">{scrambledString}</div>
       </div>
     );
   }
@@ -45,7 +45,7 @@ class InputScramble extends Component {
           type="text"
           ref={(input) => { this.userInput = input; }}
         />
-        <button type="button" onClick={this.handleButtonClick}>Scramble it up!</button>
+        <button type="button" onClick={this.handleButtonClick}>Scramble!</button>
         <br />
         {(userInput && scrambledString) ? this.renderResults() : null }
       </div>

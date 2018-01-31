@@ -31,9 +31,11 @@ class BdayScramble extends Component {
     const { originalText, scrambledString } = this.state;
     return (
       <div className="bday-scramble">
-        <p>{ (scrambledString) ? scrambledString : originalText }</p>
-        <button onClick={this.scrambleBday}>Scramble Again!</button>
-        <button onClick={this.resetText}>Reset</button>
+        <div className="bday-text">{ (scrambledString) ? scrambledString : originalText }</div>
+        <div className="bday-buttons">
+          <button onClick={this.scrambleBday}>Scramble!</button>
+          <button onClick={this.resetText}>Reset</button>
+        </div>
       </div>
     );
   }
