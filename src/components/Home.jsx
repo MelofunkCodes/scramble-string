@@ -37,6 +37,26 @@ class Home extends Component {
             <InputScramble />
           </ToggleDisplay>
         </div>
+        <div className="spacer">
+        </div>
+        <footer>
+          <div className="footer-content">
+            <a
+              href="https://github.com/MelofunkCodes/scramble-string"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <i class="fa fa-github fa-2x" aria-hidden="true" />
+            </a>
+            <a
+              href="https://melofunkcodes.github.io/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <p>MelofunkCodes</p>
+            </a>
+          </div>
+        </footer>
       </div>
     );
   }

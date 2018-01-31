@@ -32,7 +32,7 @@ class BdayScramble extends Component {
     return (
       <div className="bday-scramble">
         <div className="bday-text">{ (scrambledString) ? scrambledString : originalText }</div>
-        <div className="bday-buttons">
+        <div className="two-buttons">
           <button onClick={this.scrambleBday}>Scramble!</button>
           <button onClick={this.resetText}>Reset</button>
         </div>

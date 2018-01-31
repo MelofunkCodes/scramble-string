@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Kaushan+Script');
 
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   min-width: 400px;
@@ -11,7 +18,7 @@ h1 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 5rem;
   color: #3a3a3a;
-  padding-top: 10%;
+  padding-top: 0.5em;
   padding-bottom: 5%;
   margin: 0;
 }
@@ -46,8 +53,8 @@ button {
   text-decoration: none;
   font-size: 1rem;
   border-radius: 5px;
-  margin-left: 20px;
-  width: 30%
+  margin-right: 1em;
+  width: 230px;
 }
 
 button:hover {
@@ -65,8 +72,15 @@ button:hover {
   font-family: 'Kaushan Script', cursive;
   font-size: 4em;
   color: #3a3a3a;
-  padding-left: 1em;
+  padding-left: 0.5em;
   padding-bottom: 1em;
+  width: 80%;
+  overflow-wrap: break-word;
+  overflow: auto;
+}
+
+.two-buttons button {
+  width: 30%;
 }
 
 .input-scramble {
@@ -75,4 +89,93 @@ button:hover {
 
 .input-results {
   padding: 1em;
+}
+
+.spacer {
+  height: 100px;
+}
+
+footer {
+  margin-top: 1em;
+  background: #3a3a3a;
+  left: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+  margin-left: 1em;
+}
+
+footer p:hover {
+  color: #FF8F00;
+}
+
+.footer-content {
+  padding: 2em;
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+a:hover {
+  color: #FF8F00;
+}
+
+@media only screen and (max-width: 540px){
+   h1 {
+     font-size: 4em;
+     margin-bottom: 0;
+   }
+
+  button {
+    margin-left: 0;
+  }
+
+  input[type=text] {
+    width: 50%;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
+
+@media only screen and (max-width: 420px){
+  h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+  }
+
+  button {
+    margin-left: 0.25em;
+  }
+
+  .bday-text {
+    padding-left: 0.25em;
+    padding-bottom: 0.5em;
+    font-size: 3em;
+  }
+  .two-buttons button {
+    margin: 0.25em;
+    width: 45%;
+  }
+  input[type=text] {
+    width: 94%;
+  }
+
+  .input-form {
+    display: flex;
+    flex-direction: column;
+
+  }
 }

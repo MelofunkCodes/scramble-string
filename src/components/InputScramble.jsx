@@ -8,6 +8,7 @@ class InputScramble extends Component {
     this.state = {};
 
     this.handleButtonClick = this.handleButtonClick.bind(this);
+    this.handleRescramble = this.handleRescramble.bind(this);
     this.renderResults = this.renderResults.bind(this);
   }
 
@@ -19,6 +20,12 @@ class InputScramble extends Component {
     this.setState({
       userInput,
       scrambledString,
+    });
+  }
+
+  handleRescramble() {
+    this.setState({
+      scrambledString: scrambleString(this.state.scrambledString),
     });
   }
 
@@ -41,11 +48,16 @@ class InputScramble extends Component {
     return (
       <div className="input-scramble">
         <p>Enter words/sentence you want to scramble: </p>
-        <input
-          type="text"
-          ref={(input) => { this.userInput = input; }}
-        />
-        <button type="button" onClick={this.handleButtonClick}>Scramble!</button>
+        <div className="input-form">
+          <input
+            type="text"
+            ref={(input) => { this.userInput = input; }}
+          />
+          <div className="two-buttons">
+            <button type="button" onClick={this.handleButtonClick}>Scramble!</button>
+            <button type="button" onClick={this.handleRescramble}>Scramble Again!</button>
+          </div>
+        </div>
         <br />
         {(userInput && scrambledString) ? this.renderResults() : null }
       </div>

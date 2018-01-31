@@ -12,8 +12,3 @@ turning into, "Hey, why I don't make it into website?", and so the rest is histo
 ## Tools Used
 - React
 - react-toggle-display
-
-## Todo
-
-- Make it responsive 
-- Add a footer
